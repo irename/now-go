@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "alias": "go.now.sh",
+  "alias": "mygo.now.sh",
   "builds": [
     { "src": "example/index.js", "use": "@now/node" }
   ],
-  "routes": [
-    "home": "https://github.com/amio/now-go"
-  ]
+  "routes": {
+    "home": "https://github.com/amio/now-go",
+    "author": "https://github.com/amio",
+    "/": "Now go, let the legend come back to life!",
+    "?": "What are you looking for"
+  }
 }
